@@ -8,14 +8,27 @@
 import UIKit
 
 class ViewController4: UIViewController {
-
+    
+    @IBOutlet weak var name: UITextField!
+    
+    @IBOutlet weak var hello: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        hello.isHidden = true
 
         // Do any additional setup after loading the view.
     }
     
 
+    @IBAction func createTapped(_ sender: Any) {
+        hello.isHidden = false
+//        let userInput = name.text
+//        hello.text = "Hello \(String(describing: userInput))"
+        if let nameInput = name.text {
+            hello.text = "Hello, \(nameInput)"
+        }
+    }
     /*
     // MARK: - Navigation
 
