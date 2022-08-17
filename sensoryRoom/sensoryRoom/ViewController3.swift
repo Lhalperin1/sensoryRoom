@@ -8,10 +8,51 @@
 import UIKit
 
 class ViewController3: UIViewController {
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    @IBOutlet weak var overallLabel: UILabel!
+    
+    @IBOutlet weak var lightingLabel: UILabel!
+    
+    @IBOutlet weak var noiseLevelLabel: UILabel!
+    
+    @IBOutlet weak var crowdednessLabel: UILabel!
+    
+    @IBOutlet weak var smellLabel: UILabel!
+    
+    @IBOutlet weak var arrivalTimeLabel: UILabel!
+    
+    @IBOutlet weak var reviewLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        locationLabel.text = reviewData.location
+       
+        overallLabel.text =
+        reviewData.overall
+       
+        lightingLabel.text =
+        reviewData.lighting
+        
+        noiseLevelLabel.text =
+        reviewData.noiseLevel
+        
+        crowdednessLabel.text =
+        reviewData.crowdedness
+        
+        smellLabel.text =
+        reviewData.smell
+        
+        arrivalTimeLabel.text =
+        reviewData.arrivalTime
+        
+        reviewLabel.text =
+        reviewData.review
+        
         // Do any additional setup after loading the view.
     }
     
